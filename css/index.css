@@ -1,0 +1,60 @@
+body {
+    background: url(../image/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.table {
+    width : 80%;
+    text-align :center;
+    margin: auto;
+}
+
+
+.btn {
+    margin: 5px;
+}
+
+h2 {
+    font-size : 1em;
+}
+
+h1{
+    text-align :center; 
+    margin-top: 18px;
+}
+
+footer {
+
+    background-color: #211009;
+    color: wheat;
+    width: 100%;
+    text-align :center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    bottom: 0;
+}
+
+.container-fluid {
+    --bs-gutter-x : 0rem;
+}
+
+.btn-primary {
+    margin-left: 10%;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+#page {
+    text-align :center;
+    margin: 10px;
+}
