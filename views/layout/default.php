@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="<?= PATH ?>/css/index.css">
+    
+    <link rel="stylesheet" href="/Salle_3/views/layout/NPM/node_modules/sweetalert2/dist/sweetalert2.min.css">
 </head>
 
 <body>
@@ -48,10 +50,30 @@
             </nav>
             <header>
                 <?php
+                $scriptJS = "";
             // Y a t il un message d'alert à afficher
             if (isset($message)) {
                 if (!isset($type_message)) {
                     $type_message ="info";
+                    
+                }
+                if ($type_message == "success") {
+                    $scriptJS = "const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'center',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                          toast.addEventListener('mouseenter', Swal.stopTimer)
+                          toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                      })
+                      
+                      Toast.fire({
+                        icon: 'success',
+                        title: '{$message}'
+                      })";
                 }
                 echo "<div class='alert alert-$type_message alert-dismissible'>
                     <button type='button' class='btn-close' data-bs-dismiss='alert'></button>
@@ -66,8 +88,16 @@
                 </footer>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    </div>
+                <script src="/Salle_3/views/layout/NPM/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 
+                <script>
+                    <?php
+                        echo @$scriptJS;
+                    ?>
+                </script>
+
+    </div>
+    
 </body>
 
 </html>
