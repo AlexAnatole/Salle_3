@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="<?= PATH ?>/css/index.css">
     
-    <link rel="stylesheet" href="/Salle_3/views/layout/NPM/node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="../../NPM/node_modules/sweetalert2/dist/sweetalert2.css">
 </head>
 
 <body>
@@ -88,7 +88,7 @@
                 </footer>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                <script src="/Salle_3/views/layout/NPM/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+                <script src="../../NPM/node_modules/sweetalert2/dist/sweetalert2.js"></script>
 
                 <script>
                     <?php
