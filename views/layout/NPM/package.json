@@ -1,0 +1,22 @@
+{
+  "name": "salle_3",
+  "version": "1.0.0",
+  "description": "Introduction au MVC en PHP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexAnatole/Salle_3.git"
+  },
+  "author": "Said",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexAnatole/Salle_3/issues"
+  },
+  "homepage": "https://github.com/AlexAnatole/Salle_3#readme",
+  "dependencies": {
+    "sweetalert2": "^11.11.1"
+  }
+}

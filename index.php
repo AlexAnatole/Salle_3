@@ -63,10 +63,10 @@ try {
     }else{
         // Ici aucun paramètre n'est défini
         // On appelle le contrôleur par défaut
-        require_once(ROOT.'controllers/Home.php');
+        require_once(ROOT.'controllers/Main.php');
 
         // On instancie le contrôleur
-        $controller = new Home();
+        $controller = new Main();
 
         // On appelle la méthode index
         $controller->index();
